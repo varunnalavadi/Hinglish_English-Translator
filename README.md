@@ -47,10 +47,6 @@ This project implements a translation pipeline that converts code-mixed **Hingli
 
 ---
 
-## 🚀 Try It Yourself
-
-You can run the model on [Google Colab](#) (Add link here if available).
-
 ```bash
 pip install transformers datasets nltk
 python hinglish_to_english.py
