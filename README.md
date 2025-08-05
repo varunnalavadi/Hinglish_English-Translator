@@ -1,2 +1,56 @@
-# Hinglish_English-Translator
-LLM-based Hinglish to English translation using mBART and Hugging Face.
+# 🌐 Hinglish to English Translator using LLMs
+
+This project implements a translation pipeline that converts code-mixed **Hinglish** (Hindi-English) sentences into fluent, grammatically correct English using transformer-based **Large Language Models (LLMs)**.
+
+> 🧠 Built during internship at CDSAML (Centre for Data Science and Applied Machine Learning), PES University.
+
+---
+
+## 📌 Overview
+
+- Fine-tuned [mBART](https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt) model using **Hugging Face Transformers**.
+- Trained on a custom Hinglish-English dataset.
+- Achieved **BLEU score** improvement from `25.6 ➝ 31.62`.
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Hugging Face Transformers
+- Google Colab (GPU-enabled)
+- Pandas, NumPy, NLTK (for preprocessing)
+- BLEU Scoring for evaluation
+
+---
+
+## 🔄 Workflow
+
+1. **Data Preprocessing**  
+   Tokenization, noise removal, and alignment of Hinglish-English pairs.
+
+2. **Model Fine-tuning**  
+   Used mBART on Hugging Face with pre-trained weights.
+
+3. **Evaluation**  
+   Measured BLEU scores to evaluate translation accuracy.
+
+---
+
+## 📊 Results
+
+| Metric        | Baseline | Final  |
+|---------------|----------|--------|
+| BLEU Score    | 25.6     | 31.62  |
+
+> ⚡ Significant improvement after fine-tuning on domain-specific data.
+
+---
+
+## 🚀 Try It Yourself
+
+You can run the model on [Google Colab](#) (Add link here if available).
+
+```bash
+pip install transformers datasets nltk
+python hinglish_to_english.py
