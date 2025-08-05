@@ -5,6 +5,15 @@ This project implements a translation pipeline that converts code-mixed **Hingli
 > 🧠 Built during internship at CDSAML (Centre for Data Science and Applied Machine Learning), PES University.
 
 ---
+hinglish-translator-llm/
+├── README.md
+├── hinglish_to_english.ipynb
+├── dataset/                (optional: if you have a sample)
+│   └── sample_data.csv
+├── requirements.txt        (optional: for dependencies)
+└── results/
+    └── bleu_score_log.txt  (optional: performance metrics)
+
 
 ## 📌 Overview
 
